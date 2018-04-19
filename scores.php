@@ -23,17 +23,9 @@ include_once("config.php");
             <div class="w3-container w3-sand">
                 <br>
 
-                <center>
-                    <a href="getScores.php">
-                        <button class="w3-btn w3-2017-shaded-spruce w3-round-large">Display Scores</button>
-                    </a><br><br>
-                </center>
+                <center><a href="getScores.php"><button class="w3-btn w3-2017-shaded-spruce w3-round-large">Display Scores</button></a><br><br></center>
     
-                <center>
-                    <a href="highScore.php">
-                        <button class="w3-btn w3-2017-shaded-spruce w3-round-large">Average Score?</button>
-                    </a><br><br>
-                </center>
+                <center><a href="highScore.php"><button class="w3-btn w3-2017-shaded-spruce w3-round-large">High Score?</button></a><br><br></center>
                 
             </div>
             
@@ -48,8 +40,8 @@ include_once("config.php");
                     }
                     echo "</p>";
                 }
-                if (isset($_SESSION ['as'])) {
-                    echo "<h3>The rounded average score of the class is " . $_SESSION ['as'] . ".</h3>";
+                if (isset($_SESSION ['hs'])) {
+                    echo "<h3>Highest score is " . $_SESSION ['hs'] . ".</h3>";
                 }
                 ?>
             </div>
