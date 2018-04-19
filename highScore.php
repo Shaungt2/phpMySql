@@ -19,5 +19,4 @@ if (mysqli_num_rows($result) > 0) {
 }
     
 header('Location:scores.php');    // Go back to original page.
-//add comment
 ?>
