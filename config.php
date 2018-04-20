@@ -1,10 +1,16 @@
 <?php
-session_start();
+//session_start();
+
+/*localhost test config*/
+$hostname = "localhost";
+$username = "root";
+$password = "";
+$dbname = "site16db";
  
-$hostname = "mysql.yaacotu.com";
+/*$hostname = "mysql.yaacotu.com";
 $username = "studcollab";
 $password = "collabor8";
-$dbname = "siteghdb";
+$dbname = "siteghdb";*/
 
 // Create connection
 $conn = mysqli_connect($hostname, $username, $password, $dbname);
