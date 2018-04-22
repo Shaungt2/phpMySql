@@ -1,5 +1,6 @@
 <?php
 //session_start();
+//shorn6
 
 /*localhost test config*/
 /*$hostname = "localhost";
