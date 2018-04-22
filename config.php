@@ -1,6 +1,9 @@
 <?php
 //session_start();
+<<<<<<< HEAD
 //shorn6
+=======
+>>>>>>> github/master
 
 /*localhost test config*/
 /*$hostname = "localhost";
