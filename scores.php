@@ -50,6 +50,9 @@ include_once("config.php");
                 if (isset($_SESSION ['as'])) {
                     echo "<h3>Average score is " . $_SESSION ['as'] . ".</h3>";
                 }
+                if (isset($_SESSION ['ls'])) {
+                    echo "<h3>Low score is " . $_SESSION ['ls'] . ".</h3>";
+                }
                 ?>
             </div>
         </div>
