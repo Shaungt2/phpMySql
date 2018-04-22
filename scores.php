@@ -27,6 +27,8 @@ include_once("config.php");
     
                 <center><a href="highScore.php"><button class="w3-btn w3-2017-shaded-spruce w3-round-large">High Score?</button></a><br><br></center>
 
+                <center><a href="lowScore.php"><button class="w3-btn w3-2017-shaded-spruce w3-round-large">Low Score</button></a><br><br></center>
+
                 <center><a href="AverageScore.php"><button class="w3-btn w3-2017-shaded-spruce w3-round-large">Average Score?</button></a><br><br></center>
                 
             </div>
