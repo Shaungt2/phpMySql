@@ -23,13 +23,20 @@ include_once("config.php");
             <div class="w3-container w3-sand">
                 <br>
 
-                <center><a href="getScores.php"><button class="w3-btn w3-2017-shaded-spruce w3-round-large">Display Scores</button></a><br><br></center>
+                <center><a href="getScores.php"><button class="w3-btn w3-2017-shaded-spruce w3-round-large">Display Scores</button>
+				</a><br><br></center>
     
-                <center><a href="highScore.php"><button class="w3-btn w3-2017-shaded-spruce w3-round-large">High Score?</button></a><br><br></center>
+                <center><a href="highScore.php"><button class="w3-btn w3-2017-shaded-spruce w3-round-large">High Score?</button></a>
+				<br><br></center>
 
-                <center><a href="lowScore.php"><button class="w3-btn w3-2017-shaded-spruce w3-round-large">Low Score</button></a><br><br></center>
+                <center><a href="lowScore.php"><button class="w3-btn w3-2017-shaded-spruce w3-round-large">Low Score</button></a><br>
+				<br></center>
 
-                <center><a href="AverageScore.php"><button class="w3-btn w3-2017-shaded-spruce w3-round-large">Average Score?</button></a><br><br></center>
+                <center><a href="AverageScore.php"><button class="w3-btn w3-2017-shaded-spruce w3-round-large">Average Score?
+					</button></a><br><br></center>
+				
+				<center><a href="median.php"><button class="w3-btn w3-2017-shaded-spruce w3-round-large">Median?</button></a><br>
+				<br></center>
                 
             </div>
             
@@ -55,6 +62,10 @@ include_once("config.php");
                     echo "<h3>Low score is " . $_SESSION ['ls'] . ".</h3>";
                 }
 
+				
+				if (isset($_SESSION ['md'])) {
+                    echo "<h3>The Median is " . $_SESSION ['md'] . ".</h3>";
+                }
                 ?>
             </div>
         </div>
