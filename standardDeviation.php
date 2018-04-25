@@ -5,7 +5,7 @@ include_once("config.php");
 session_unset();
 
 // Select standard deviation score from scores table.
-$sql = "SELECT TRUNCATE(STD(score),2) FROM scores";
+$sql = "SELECT FORMAT(STD(score),2) FROM scores";
 $result = mysqli_query($conn, $sql);
 
 // Create a session variable, sd, to store the standard deviation.
