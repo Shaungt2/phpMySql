@@ -5,14 +5,13 @@ include_once("config.php");
 session_unset();
 
 // Select standard deviation score from scores table.
-//$sql = "SELECT * FROM scores WHERE score=(select STD(score) from scores)";
-$sql = "SELECT STD(score) FROM scores";
+$sql = "SELECT TRUNCATE(STD(score),2) FROM scores";
 $result = mysqli_query($conn, $sql);
 
-// Create a session variable, sd, to store the lowest score.
+// Create a session variable, sd, to store the standard deviation.
 if (mysqli_num_rows($result) > 0) {
     $row = mysqli_fetch_assoc($result);
-    $_SESSION ["sd"] = $row["STD(score)"];   // Set sd session variable to low score in db.
+    $_SESSION ["sd"] = $row["STD(score)"];
 } else {
     session_unset();    // Remove all session variables.
 }
