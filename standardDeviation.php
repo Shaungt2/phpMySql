@@ -11,7 +11,6 @@ $result = mysqli_query($conn, $sql);
 // Create a session variable, sd, to store the standard deviation.
 if (mysqli_num_rows($result) > 0) {
     $row = mysqli_fetch_assoc($result);
-    var_dump($row);
     $_SESSION ["sd"] = $row["FORMAT(STD(score),2)"];
 } else {
     session_unset();    // Remove all session variables.
