@@ -27,7 +27,7 @@ include_once("config.php");
     
                 <center><a href="highScore.php"><button class="w3-btn w3-2017-shaded-spruce w3-round-large">High Score?</button></a><br><br></center>
 
-                <center><a href="lowScore.php"><button class="w3-btn w3-2017-shaded-spruce w3-round-large">Low Score</button></a><br><br></center>
+                <center><a href="standardDeviation.php"><button class="w3-btn w3-2017-shaded-spruce w3-round-large">Standard Deviation</button></a><br><br></center>
 
                 <center><a href="AverageScore.php"><button class="w3-btn w3-2017-shaded-spruce w3-round-large">Average Score?</button></a><br><br></center>
                 
@@ -51,8 +51,8 @@ include_once("config.php");
                     echo "<h3>Average score is " . $_SESSION ['as'] . ".</h3>";
                 }
 
-                if (isset($_SESSION ['ls'])) {
-                    echo "<h3>Low score is " . $_SESSION ['ls'] . ".</h3>";
+                if (isset($_SESSION ['sd'])) {
+                    echo "<h3>Standard deviation is " . $_SESSION ['sd'] . ".</h3>";
                 }
 
                 ?>
