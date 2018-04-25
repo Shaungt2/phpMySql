@@ -6,7 +6,7 @@ session_unset();
 
 // Select standard deviation score from scores table.
 //$sql = "SELECT * FROM scores WHERE score=(select STD(score) from scores)";
-$sql = "SELECT FORMAT(STD(scores.score),2) FROM scores";
+$sql = "SELECT STD(score) FROM scores";
 $result = mysqli_query($conn, $sql);
 
 // Create a session variable, sd, to store the lowest score.
