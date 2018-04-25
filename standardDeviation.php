@@ -16,6 +16,6 @@ if (mysqli_num_rows($result) > 0) {
 } else {
     session_unset();    // Remove all session variables.
 }
-
+echo "is this working";
 header('Location:scores.php');    // Go back to original page.
 ?>
